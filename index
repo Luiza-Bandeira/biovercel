@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luiza Bandeira - Especialista em Finanças</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: dark;
+      --blue: #082d60;
+      --wine: #98104b;
+      --pink: #fc95dc;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { min-height: 100%; }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      background: linear-gradient(var(--blue), var(--wine));
+      color: var(--white);
+      font-family: Montserrat, sans-serif;
+    }
+
+    main {
+      display: flex;
+      min-height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      padding: 32px 16px 48px;
+      text-align: center;
+    }
+
+    .profile {
+      display: flex;
+      width: min(100%, 833px);
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-photo {
+      display: block;
+      width: min(230px, 68vw);
+      height: auto;
+      border-radius: 100px;
+    }
+
+    h1 {
+      margin: 12px 0 6px;
+      font-size: 21px;
+      font-weight: 400;
+      line-height: 1.25;
+    }
+
+    .intro {
+      max-width: 310px;
+      margin: 0 0 22px;
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 1.08;
+    }
+
+    .links {
+      display: flex;
+      width: min(100%, 500px);
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .link-button {
+      display: flex;
+      min-height: 64px;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 24px;
+      border: 1px solid var(--white);
+      border-radius: 32px;
+      color: var(--white);
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.25;
+      text-decoration: none;
+      transition: transform 180ms ease, background-color 180ms ease;
+    }
+
+    .link-button:hover,
+    .link-button:focus-visible {
+      background: rgba(255, 255, 255, 0.12);
+      outline: none;
+      transform: translateY(-2px);
+    }
+
+    .course-button {
+      background: var(--pink);
+      border-color: var(--pink);
+      color: #32112b;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .course-button:hover,
+    .course-button:focus-visible { background: #ffb9e8; }
+
+    .ai-button { border-color: transparent; background: var(--wine); }
+
+    .socials {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .socials a {
+      display: inline-flex;
+      width: 45px;
+      height: 40px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      transition: transform 180ms ease;
+    }
+
+    .socials a:hover,
+    .socials a:focus-visible { transform: translateY(-2px); }
+
+    .socials img { width: 45px; height: 40px; object-fit: contain; }
+
+    .hotmart {
+      width: 130px;
+      height: 50px;
+      margin-top: 20px;
+      object-fit: contain;
+    }
+
+    @media (max-width: 520px) {
+      main { padding-top: 32px; }
+      .link-button { width: 100%; }
+      .course-button { font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="profile" aria-label="Perfil de Luiza Bandeira">
+      <img class="profile-photo" src="https://static-media.hotmart.com/2WY3AcykUyMWm28UcvWVGJE69-Q=/filters:quality(100)/klickart-prod/uploads/media/file/10883010/expert-blazer-dh4epvuw_(1).png" alt="Luiza Bandeira">
+      <h1>Luiza Bandeira</h1>
+      <p class="intro">Bacharel em Economia especialista em planejamento financeiro com 6 anos de formação e 5 anos de atendimento.</p>
+
+      <div class="links">
+        <a class="link-button" href="https://calendar.app.google/xDNUaNVVF6wg8xPn8" target="_blank" rel="noopener">Agende sua sessão de diagnostico gratuita</a>
+        <a class="link-button course-button" href="https://sdmgratis.vercel.app/" target="_blank" rel="noopener">CURSO GRATUITO SEU DINHEIRO NA MESA COM MATERIAIS EXCLUSIVOS - DISPONÍVEL POR POUCOS DIAS</a>
+        <a class="link-button ai-button" href="https://go.hotmart.com/J107603595A" target="_blank" rel="noopener">ECONOMIZA AI - SUA ASSISTENTE FINANCEIRA DE BOLSO</a>
+      </div>
+
+      <nav class="socials" aria-label="Redes sociais">
+        <a href="https://www.instagram.com/econo.m.iza/" target="_blank" rel="noopener" aria-label="Instagram"><img src="https://static-media.hotmart.com/nYOHx27i_JbBQBG6kg4DCJjWuGM=/filters:quality(100)/klickart-prod/uploads/media/file/5438845/instagram-w_template-linknabio.png" alt=""></a>
+        <a href="https://www.youtube.com/@luizadoeconomiza" target="_blank" rel="noopener" aria-label="YouTube"><img src="https://static-media.hotmart.com/pwBJIqn-Zh23uenEO1ItSkjUJlE=/filters:quality(100)/klickart-prod/uploads/media/file/5438861/youtube-w_template-linknabio.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/luiza-marielly-18179b14b/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="https://static-media.hotmart.com/L7nW2sfSN5UbIU55B7D3XLzl4Wk=/filters:quality(100)/klickart-prod/uploads/media/file/5438865/linkedin-w_template-linknabio.png" alt=""></a>
+        <a href="https://www.facebook.com/profile.php?id=61550926348800" target="_blank" rel="noopener" aria-label="Facebook"><img src="https://static-media.hotmart.com/AycxUqq6nVJIZbs9jSfyFhAUtS8=/filters:quality(100)/klickart-prod/uploads/media/file/5438867/facebook-w_template-linknabio.png" alt=""></a>
+        <a href="mailto:luizamariellybc@gmail.com" aria-label="E-mail"><img src="https://static-media.hotmart.com/1ZS02EFDryGOHGokH-vIdcTEDnA=/filters:quality(100)/klickart-prod/uploads/media/file/5438868/email-w_template-linknabio.png" alt=""></a>
+      </nav>
+
+      <a href="https://art.pages.hotmart.com/public/redirects/made-with-extensions" target="_blank" rel="noopener" aria-label="Feito com Hotmart Pages"><img class="hotmart" src="https://static-media.hotmart.com/FkMZBW4tsif0QE2N88PJ1_wBU4w=/filters:quality(100)/klickart-prod/uploads/media/file/5438885/feito-com_w.png" alt="Feito com Hotmart Pages"></a>
+    </section>
+  </main>
+</body>
+</html>
